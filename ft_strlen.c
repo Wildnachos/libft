@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akabbaj <akabbaj@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: akabbaj <marvin@student.42lausanne.ch>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 15:07:00 by akabbaj           #+#    #+#             */
-/*   Updated: 2024/10/05 15:07:00 by akabbaj          ###   ########.ch       */
+/*   Created: 2024/10/06 12:52:44 by akabbaj           #+#    #+#             */
+/*   Updated: 2024/10/06 12:52:44 by akabbaj          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ int	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     printf("%d", ft_strlen("Hello Barbara"));
-// }

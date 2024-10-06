@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   workspace.json                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akabbaj <akabbaj@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: akabbaj <marvin@student.42lausanne.ch>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 15:00:39 by akabbaj           #+#    #+#             */
-/*   Updated: 2024/10/05 15:00:39 by akabbaj          ###   ########.ch       */
+/*   Created: 2024/10/06 15:49:02 by akabbaj           #+#    #+#             */
+/*   Updated: 2024/10/06 15:50:39 by akabbaj          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ int	ft_atoi(const char *nptr)
 	result = 0;
 	neg = 1;
 	i = 0;
-	if (nptr == 0 || nptr[0] == 0)
+	if (nptr == NULL || nptr[0] == 0)
 		return (result);
 	while (wspace(nptr[i]))
 		i++;
 	if (nptr[i] == '-')
 		neg = -1;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	if (nptr[i] == '-' || (nptr[i] == '+' && nptr[i + 1] != '-'))
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{

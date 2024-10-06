@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akabbaj <akabbaj@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: akabbaj <marvin@student.42lausanne.ch>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 15:03:01 by akabbaj           #+#    #+#             */
-/*   Updated: 2024/10/05 15:03:01 by akabbaj          ###   ########.ch       */
+/*   Created: 2024/10/06 15:51:26 by akabbaj           #+#    #+#             */
+/*   Updated: 2024/10/06 15:53:53 by akabbaj          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(unsigned int nmemb, size_t size)
 {
 	char	*result;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	if (!nmemb || !size)

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akabbaj <akabbaj@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: akabbaj <marvin@student.42lausanne.ch>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 15:00:33 by akabbaj           #+#    #+#             */
-/*   Updated: 2024/10/05 15:00:33 by akabbaj          ###   ########.ch       */
+/*   Created: 2024/10/06 13:18:25 by akabbaj           #+#    #+#             */
+/*   Updated: 2024/10/06 13:18:25 by akabbaj          ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*t_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned int	i;
 	unsigned char	*str;
